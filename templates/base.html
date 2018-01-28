@@ -23,9 +23,6 @@
     <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}"/>
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{ article.title|striptags }}">
-    <meta name="twitter:description" content="{{ article.summary|striptags|escape }}">
-    <meta name="twitter:url" content="{{ SITEURL }}/{{ article.url }}">
     {% elif page %}
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="{{ page.title }}"/>
@@ -35,10 +32,6 @@
     <meta property="og:image" content="{{ AUTHOR_AVATAR }}"/>
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:description" content="{{ SITESUBTITLE }}">
-    <meta name="twitter:url" content="{{ SITEURL }}/{{ page.url }}">
-    <meta name="twitter:image" content="{{ AUTHOR_AVATAR }}">
     {% else %}
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="{{ SITENAME }}"/>
@@ -48,10 +41,6 @@
     <meta property="og:image" content="{{ AUTHOR_AVATAR }}"/>
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{ SITENAME }}">
-    <meta name="twitter:description" content="{{ SITESUBTITLE }}">
-    <meta name="twitter:url" content="{{ SITEURL }}">
-    <meta name="twitter:image" content="{{ AUTHOR_AVATAR }}">
     {% endif %}
 
     <!-- Feed -->
